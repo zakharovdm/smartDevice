@@ -1,0 +1,25 @@
+.button {
+  padding: 17px 13px 10px;
+  font-family: $font-main;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: $white;
+  text-transform: uppercase;
+  width: 180px;
+
+  background-color: transparent;
+  border: 1px solid $white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}

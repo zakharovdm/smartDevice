@@ -1,0 +1,12 @@
+.page {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+.page__body {
+  font-family: $font-main;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
