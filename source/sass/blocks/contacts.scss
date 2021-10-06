@@ -1,0 +1,35 @@
+.contacts__title {
+  margin: 0 0 29px;
+
+  font-weight: 400;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: $text-footer;
+}
+
+.contacts__list {
+  @include reset-list;
+}
+
+.contacts__item {
+  font-family: $font-secondary;
+  font-size: 15px;
+  line-height: 25px;
+  color: $text-footer;
+  opacity: 0.5;
+}
+
+.contacts__link {
+  color: $text-footer;
+  transition: color 0.2s;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  &:active {
+    color: $accent-color;
+    opacity: 0.7;
+  }
+}

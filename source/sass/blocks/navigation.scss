@@ -1,0 +1,35 @@
+.navigation__title {
+  margin: 0 0 29px;
+
+  font-weight: 400;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: $text-footer;
+}
+
+.navigation__list {
+  @include reset-list;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  grid-template-rows: repeat(4, max-content);
+  column-gap: 65px;
+}
+
+.navigation__link {
+  font-family: $font-secondary;
+  font-size: 15px;
+  line-height: 25px;
+  color: $text-footer;
+  opacity: 0.5;
+  transition: color 0.2s;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  &:active {
+    color: $accent-color;
+    opacity: 0.7;
+  }
+}

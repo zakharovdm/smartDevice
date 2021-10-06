@@ -11,7 +11,7 @@
 </head>
 <body class="page__body">
   <header class="site-header">
-    <div class="site-header__wrapper">
+    <div class="site-header__wrapper container container--wide">
       <div class="site-header__img-box">
         <picture>
           <source media="(max-width: 767px)" srcset="img/logo-mob.svg">
@@ -44,8 +44,80 @@
 
   </main>
 
-  <footer>
+  <footer class="site-footer">
+    <div class="container container--wide">
+      <div class="site-footer__nav-block">
+        <div class="site-footer__socials-block">
+          <div class="site-footer__img-box">
+            <img src="img/logo-footer.svg" width="202" height="52" alt="Smart Device. Логотип магазина">
+          </div>
+          <div class="socials">
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a class="socials__link" href="#">
+                  <span class="visually-hidden">Мы в фэйсбук</span>
+                  <svg width="27" height="27">
+                    <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#">
+                  <span class="visually-hidden">Мы в одноклассниках</span>
+                  <svg width="27" height="26">
+                    <use xlink:href="img/sprite_auto.svg#icon-odnoklassniki"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#">
+                  <span class="visually-hidden">Мы во вконтакте</span>
+                  <svg width="27" height="26">
+                    <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
+        <nav class="site-footer__nav navigation">
+          <h2 class="navigation__title">Разделы сайта</h2>
+          <ul class="navigation__list">
+            <li class="navigation__item"><a class="navigation__link" href="#about">О компании</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#products">Комплектующие</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Продукты</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Доставка</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Производство печатных плат</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Монтаж печатных плат</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-footer__contacts contacts">
+          <h2 class="contacts__title">Наш офис</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">г. Мытищи, Олимпийский проспект, д.10</li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="tel:+74955894050">+7 (495) 589-40-50</a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="tel:+79250038767">+7 (925) 003-87-67</a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="tel:+792692608079">+7 (926) 926-080-79</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="site-footer__info">
+        <span class="site-footer__rights">Все права защищены</span>
+        <span class="site-footer__period">1999-2018 SD Service Devices</span>
+        <a class="site-footer__privacy" href="#">Условия конфиденциальности</a>
+        <span class="site-footer__developer">Developed by wow studio</span>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

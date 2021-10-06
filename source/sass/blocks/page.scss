@@ -4,6 +4,10 @@
 }
 
 .page__body {
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+  min-height: 100%;
+  margin: 0;
   font-family: $font-main;
   font-weight: 400;
   font-style: normal;

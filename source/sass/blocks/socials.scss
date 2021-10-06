@@ -1,0 +1,21 @@
+.socials__list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.socials__item {
+  margin-right: 16px;
+}
+
+.socials__link svg {
+  fill: $grey;
+  transition: fill 0.2s;
+}
+
+.socials__link {
+  &:hover svg,
+  &:focus svg {
+    fill: $accent-color;
+  }
+}
