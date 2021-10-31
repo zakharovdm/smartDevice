@@ -1,3 +1,24 @@
+.contacts {
+  @media (max-width: $tablet-width) {
+    position: relative;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    display: block;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: calc(calc(100vw + 100%) / 2);
+      width: 100vw;
+      height: 1px;
+      box-shadow: 100vw 0 0 $decorate-color;
+      opacity: 0.2;
+    }
+  }
+}
+
 .contacts__title {
   margin: 0 0 29px;
 
@@ -5,6 +26,11 @@
   font-size: 15px;
   text-transform: uppercase;
   color: $text-footer;
+
+  @media (max-width: $tablet-width) {
+    margin: 0;
+    padding: 28px 0 29px;
+  }
 }
 
 .contacts__list {

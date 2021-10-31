@@ -1,7 +1,23 @@
+.socials {
+  @media (max-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 .socials__list {
   @include reset-list;
   display: flex;
   flex-wrap: wrap;
+
+  @media (max-width: $desktop-width) {
+    margin-top: 8px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin: 0 auto;
+  }
 }
 
 .socials__item {
