@@ -44,9 +44,20 @@
     <section class="promo">
       <div class="promo__wrapper container container--wide">
         <h1 class="visually-hidden">Интернет магазин по продаже печатных плат. Smart Device.</h1>
-        <p class="promo__title">Печатные платы</p>
-        <p class="promo__subtitle">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a class="promo__link" href="#">Получить бесплатную консультацию</a>
+        <div class="promo__inner">
+          <p class="promo__title">Печатные платы</p>
+          <div class="promo__sub-block">
+            <p class="promo__subtitle">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+            <a class="promo__link" href="#">Получить бесплатную консультацию</a>
+          </div>
+        </div>
+        <div class="promo__img-box">
+          <picture>
+            <source type="image/webp" srcset="img/boards.webp 1x, img/boards@2x.webp 2x">
+            <!--1x - 713px; 2x - 1426px-->
+            <img src="img/boards.png" srcset="img/boards@2x.png 2x" width="713" height="523" alt="Три печатных платы">
+          </picture>
+        </div>
       </div>
     </section>
   </main>
